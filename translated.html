@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icon.png">
+    <title>Конвертер систем числення</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">Конвертер систем числення</h1>
+        <div class="block">
+            <div class="block__row">
+                <div class="block__input-system">
+                    <div class="dropdown" id="dropdown-input">
+                        <div class="select">
+                            <span class="selected">Десяткова</span>
+                            <img src="img/tick.svg" alt="not found" class="tick">
+                        </div>
+                        <ul class="menu">
+                            <li id="bin">Двійкова</li>
+                            <li id="oct">Вісімкова</li>
+                            <li class="active" id="dec">Десяткова</li>
+                            <li id="hex">Шістнадцяткова</li>
+                        </ul>
+                    </div>
+                </div>
+                <div data-title="Swap systems" class="block__images">
+                    <button class="block__button" id="button-reverse">
+                        <img src="img/arrow.svg" alt="not found">
+                        <img src="img/arrow.svg" alt="not found">
+                    </button>
+                </div>
+                <div class="block__output-system">
+                    <div class="dropdown" id="dropdown-output">
+                        <div class="select">
+                            <span class="selected">Двійкова</span>
+                            <img src="img/tick.svg" alt="not found" class="tick">
+                        </div>
+                        <ul class="menu">
+                            <li class="active">Двійкова</li>
+                            <li>Вісімкова</li>
+                            <li>Десяткова</li>
+                            <li>Шістнадцяткова</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="block__columns">
+                <p class="copy-message">Число скопійовано</p>
+                <p class="copy">
+                    <span></span>
+                </p>
+                <button class="button-clear">
+                    <span></span>
+                    <span></span>
+                </button>
+                <textarea type="number" placeholder="Введіть число, з якої хочете перевести." type="text" name="enterDigit" id="input"></textarea>
+                <div class="block__row-midl">
+                    <button class="button-interpret-adaptive">Перевести</button>
+                </div>
+                <textarea type="text" name="outputDigit" id="output" readonly></textarea>
+            </div>
+        </div>
+        <button class="button-interpret">Перевести</button>
+        <div class="language">
+            <div class="language__text">
+                <a href="index.html">Eng</a> |
+                <a href="translated.html" class="language__active">Ukr</a>
+            </div>
+        </div>
+        <!-- <section class="number-bar">
+            <div class="number-bar__row">
+                <div class="number-bar__column">1</div>
+                <div class="number-bar__column">2</div>
+                <div class="number-bar__column">3</div>
+                <div class="number-bar__column">4</div>
+                <div class="number-bar__column">5</div>
+                <div class="number-bar__column">6</div>
+                <div class="number-bar__column">7</div>
+                <div class="number-bar__column">8</div>
+                <div class="number-bar__column">9</div>
+                <div class="number-bar__column">A</div>
+                <div class="number-bar__column">B</div>
+                <div class="number-bar__column">C</div>
+                <div class="number-bar__column">D</div>
+                <div class="number-bar__column">E</div>
+                <div class="number-bar__column">F</div>
+                <div class="number-bar__column" id="backspace"><img src="img/backspace.svg" alt="not found"></div>
+                <div class="number-bar__column">0</div>
+                <div class="number-bar__column" id="enter"><img src="img/enter.svg" alt="not found"></div>
+            </div>
+        </section> -->
+    </div>
+<script src="js/ukrScript.js"></script>
+</body>
+</html>

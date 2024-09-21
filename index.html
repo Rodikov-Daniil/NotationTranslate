@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icon.png">
+    <title>Number system converter</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">Number system converter</h1>
+        <div class="block">
+            <div class="block__row">
+                <div class="block__input-system">
+                    <div class="dropdown" id="dropdown-input">
+                        <div class="select">
+                            <span class="selected">Decimal</span>
+                            <img src="img/tick.svg" alt="not found" class="tick">
+                        </div>
+                        <ul class="menu">
+                            <li id="bin">Binary</li>
+                            <li id="oct">Octal</li>
+                            <li class="active" id="dec">Decimal</li>
+                            <li id="hex">Hexdecimal</li>
+                        </ul>
+                    </div>
+                </div>
+                <div data-title="Swap systems" class="block__images">
+                    <button class="block__button" id="button-reverse">
+                        <img src="img/arrow.svg" alt="not found">
+                        <img src="img/arrow.svg" alt="not found">
+                    </button>
+                </div>
+                <div class="block__output-system">
+                    <div class="dropdown" id="dropdown-output">
+                        <div class="select">
+                            <span class="selected">Binary</span>
+                            <img src="img/tick.svg" alt="not found" class="tick">
+                        </div>
+                        <ul class="menu">
+                            <li class="active">Binary</li>
+                            <li>Octal</li>
+                            <li>Decimal</li>
+                            <li>Hexdecimal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="block__columns">
+                <p class="copy-message">Translation copied</p>
+                <p class="copy">
+                    <span></span>
+                </p>
+                <button class="button-clear">
+                    <span></span>
+                    <span></span>
+                </button>
+                <textarea type="number" placeholder="Enter the number you want to transfer from." type="text" name="enterDigit" id="input"></textarea>
+                <div class="block__row-midl">
+                    <button class="button-interpret-adaptive">Convert</button>
+                </div>
+                <textarea type="text" name="outputDigit" id="output" readonly></textarea>
+            </div>
+        </div>
+        <button class="button-interpret">Convert</button>
+        <div class="language">
+            <div class="language__text">
+                <a href="index.html" class="language__active">Eng</a> |
+                <a href="translated.html">Ukr</a>
+            </div>
+        </div>
+        <!-- <section class="number-bar">
+            <div class="number-bar__row">
+                <div class="number-bar__column">1</div>
+                <div class="number-bar__column">2</div>
+                <div class="number-bar__column">3</div>
+                <div class="number-bar__column">4</div>
+                <div class="number-bar__column">5</div>
+                <div class="number-bar__column">6</div>
+                <div class="number-bar__column">7</div>
+                <div class="number-bar__column">8</div>
+                <div class="number-bar__column">9</div>
+                <div class="number-bar__column">A</div>
+                <div class="number-bar__column">B</div>
+                <div class="number-bar__column">C</div>
+                <div class="number-bar__column">D</div>
+                <div class="number-bar__column">E</div>
+                <div class="number-bar__column">F</div>
+                <div class="number-bar__column" id="backspace"><img src="img/backspace.svg" alt="not found"></div>
+                <div class="number-bar__column">0</div>
+                <div class="number-bar__column" id="enter"><img src="img/enter.svg" alt="not found"></div>
+            </div>
+        </section> -->
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
